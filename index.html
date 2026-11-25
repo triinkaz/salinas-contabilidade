@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Salinas Contabilidade · Clareza para seguir crescendo</title>
+  <meta name="description" content="Contabilidade e assessoria para pessoas, MEIs e empresas, em Votorantim.">
+  <meta name="theme-color" content="#1b1a18">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <!-- primeira pintura: nunca a página crua. O tema (?tema=) e a cor de fundo ligam aqui, antes de qualquer arquivo;
+       a folha do site vem em <link> (segura a pintura até chegar), nunca pelo JS -->
+  <script>
+    (function () {
+      var d = document.documentElement, q = new URLSearchParams(location.search);
+      var temas = { grafite: '#1b1a18', marinho: '#0f1824', oliva: '#161b16' };
+      var t = q.get('tema');
+      if (!temas[t]) t = 'grafite';
+      d.dataset.tema = t;
+      d.style.backgroundColor = temas[t];
+      d.classList.add('js');
+      if (matchMedia('(hover: none)').matches) d.classList.add('toque');
+      // ?pronto ou movimento reduzido: tudo já no lugar, sem entrada
+      if (q.has('pronto') || matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('sem-entrada');
+      // se o JS não subir em 4 s, o que espera a entrada aparece do jeito normal
+      setTimeout(function () { if (!window.__tsVivo) d.classList.add('sem-entrada'); }, 4000);
+    })();
+  </script>
+  <style>body{margin:0}html:not(.assentou) *,html:not(.assentou) :before,html:not(.assentou) :after{transition:none!important}html.js:not(.sem-entrada) [data-entra],html.js:not(.sem-entrada) [data-revela]{visibility:hidden}</style>
+  <link rel="preload" as="image" href="./img/salinas-retrato.jpg" imagesrcset="img/salinas-retrato.jpg 1080w" imagesizes="100vw" fetchpriority="high">
+  <script type="module" crossorigin src="./assets/index-EMpTFQVZ.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-1CWzZS4B.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+  <!-- Os desenhos do site, uma vez só: <svg class="ic"><use href="#i-seta"/></svg> usa cada um na cor do texto.
+     O degradê "ouro" pinta o selo da marca no topo e no rodapé. -->
+<svg class="desenhos" width="0" height="0" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="ouro" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="var(--metal-claro)"/>
+      <stop offset="0.5" stop-color="var(--metal)"/>
+      <stop offset="1" stop-color="var(--metal-escuro)"/>
+    </linearGradient>
+  </defs>
+  <symbol id="i-seta" viewBox="0 0 24 24"><path d="M3 12h17.5M14 5.5l6.5 6.5-6.5 6.5"/></symbol>
+  <symbol id="i-vira" viewBox="0 0 24 24"><path d="M9.500 5.500 16 12l-6.500 6.500"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><path d="M8 9h8M8 12.2h8M8 15.4h5"/></symbol>
+  <symbol id="i-pessoas" viewBox="0 0 24 24"><circle cx="9" cy="8.4" r="3.2"/><path d="M3 19.5c0-3.3 2.7-5.7 6-5.7s6 2.4 6 5.7"/><circle cx="17.2" cy="9.4" r="2.4"/><path d="M16.4 14.2c2.8.2 4.6 2.2 4.6 5"/></symbol>
+  <symbol id="i-grafico" viewBox="0 0 24 24"><path d="M4.5 20v-5.5M9.5 20v-8M14.5 20v-6M19.5 20V10M4.5 9.5l5-3.2 5 2.2 5-4.8M16.3 3.7h3.2v3.2"/></symbol>
+  <symbol id="i-contrato" viewBox="0 0 24 24"><path d="M7 3.5h7l4.5 4.5V19a1.5 1.5 0 0 1-1.5 1.5H7A1.5 1.5 0 0 1 5.500 19V5A1.5 1.5 0 0 1 7 3.5zM14 3.5V8h4.5M8.500 12h7M8.500 15.500h7"/></symbol>
+  <symbol id="i-escudo" viewBox="0 0 24 24"><path d="M12 3.2l7 2.6v5.400c0 4.400-2.900 7.700-7 9.600-4.100-1.900-7-5.200-7-9.600V5.800z"/></symbol>
+  <symbol id="i-casa" viewBox="0 0 24 24"><path d="M3.800 11.300 12 4.300l8.200 7M6.200 9.600v9.900h11.600V9.600M10 19.500v-5.200h4v5.200"/></symbol>
+  <symbol id="i-tributo" viewBox="0 0 24 24"><path d="M6.500 3.500h11v17l-2.200-1.500-1.700 1.500-1.600-1.500-1.600 1.500-1.700-1.500-2.200 1.500zM14.700 8.300l-5.400 6"/><circle cx="9.700" cy="8.900" r="1.200"/><circle cx="14.300" cy="13.700" r="1.200"/></symbol>
+  <symbol id="i-conversa" viewBox="0 0 24 24"><path d="M12 3.500a8.500 8.500 0 0 0-7.400 12.700L3.500 20.500l4.500-1.100A8.500 8.500 0 1 0 12 3.500z"/><path d="M9.200 8.400c-.4 3 2.300 6.300 5.900 6.700l1.100-1.500-1.800-1.200-.9.800c-1-.5-1.900-1.400-2.400-2.500l.8-.9-1.100-1.900z"/></symbol>
+  <symbol id="i-fone" viewBox="0 0 24 24"><path d="M6.500 3.800h3l1.400 3.900-1.900 1.400a11 11 0 0 0 5.900 5.900l1.400-1.900 3.900 1.400v3a1.800 1.800 0 0 1-2 1.800C10.700 18.500 5.500 13.300 4.700 5.800a1.800 1.800 0 0 1 1.800-2z"/></symbol>
+  <symbol id="i-carta" viewBox="0 0 24 24"><rect x="3.500" y="5.500" width="17" height="13" rx="2"/><path d="M4.200 7.200 12 13l7.800-5.800"/></symbol>
+  <symbol id="i-pino" viewBox="0 0 24 24"><path d="M12 21s6.500-5.600 6.500-10.600a6.500 6.500 0 0 0-13 0C5.500 15.400 12 21 12 21z"/><circle cx="12" cy="10.300" r="2.300"/></symbol>
+  <symbol id="i-mapa" viewBox="0 0 24 24"><path d="M9 4.500 3.800 6.500v13L9 17.500l6 2 5.200-2v-13L15 6.500zM9 4.500v13M15 6.500v13"/></symbol>
+  <symbol id="i-balao" viewBox="0 0 24 24"><path d="M5 5.500h14a1.500 1.500 0 0 1 1.500 1.500v8a1.500 1.500 0 0 1-1.500 1.500h-7l-4.500 3.500v-3.500H5A1.500 1.500 0 0 1 3.500 15V7A1.500 1.500 0 0 1 5 5.500z"/></symbol>
+  <symbol id="i-cadeado" viewBox="0 0 24 24"><rect x="5.500" y="10.500" width="13" height="9.500" rx="2"/><path d="M8.500 10.500V8a3.500 3.500 0 0 1 7 0v2.500"/></symbol>
+  <symbol id="i-tela" viewBox="0 0 24 24"><rect x="3.500" y="5" width="17" height="11.500" rx="1.500"/><path d="M9 20h6M12 16.500V20"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4.500 8h15M4.500 12h15M4.500 16h15"/></symbol>
+  <symbol id="i-fechar" viewBox="0 0 24 24"><path d="M6.500 6.500l11 11M17.500 6.500l-11 11"/></symbol>
+  <symbol id="i-aspas" viewBox="0 0 24 24"><path d="M4.500 17.500v-4.300c0-3.400 1.900-5.800 4.800-6.700l.6 1.500c-1.600.6-2.400 1.800-2.500 3.300h2.400v6.200zM13.500 17.500v-4.300c0-3.400 1.900-5.800 4.800-6.700l.6 1.500c-1.600.6-2.400 1.800-2.500 3.300h2.400v6.200z"/></symbol>
+</svg>
+
+  <!-- Topo: preso à tela. No hero é transparente (cápsula de vidro só nos links); depois dele vira uma barra escura,
+     que some quando a página desce e volta quando ela sobe (src/motion/topo.js). Os links da cápsula marcam a seção
+     em que a página está: cada um aponta para o id de uma seção. -->
+<header class="topo" data-topo>
+  <div class="topo__barra">
+    <a class="marca" href="#inicio" aria-label="Salinas Contabilidade: voltar ao início">
+      <span class="marca__selo selo--ouro"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="1"/><text x="50" y="61" text-anchor="middle" fill="currentColor" font-family="Georgia" font-size="30">S</text></svg></span>
+      <span class="marca__nome">
+        <span class="marca__linha">Salinas</span>
+        <span class="marca__sub">Contabilidade</span>
+      </span>
+    </a>
+
+    <nav class="topo__nav" aria-label="Seções do site">
+      <span class="topo__realce" aria-hidden="true"></span>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre nós</a>
+      <a href="#areas">Soluções</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="topo__fim">
+      <a class="botao botao--claro topo__cta" href="#contato">
+        <span class="botao__txt">Fale com a equipe</span>
+        <span class="botao__seta"><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg>
+</span>
+      </a>
+      <button class="topo__menu" type="button" data-abre="menu" aria-haspopup="dialog" aria-controls="menu" aria-label="Abrir o menu">
+        <svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+  <main id="conteudo">
+    <!-- Hero: a fachada em tela cheia. O carrossel passa pelas áreas de atuação: cada botão da lista é uma área, na mesma
+     ordem das frases de .hero__falas; data-socio diz qual sócio aparece no cartão (src/motion/hero.js lê tudo daqui).
+     Para mudar as áreas, troque os botões e as frases, mantendo o mesmo número dos dois. -->
+<section class="hero gruda s-noite" id="inicio" data-hero>
+  <div class="hero__palco">
+    <div class="hero__fundo">
+      <img src="./img/salinas-retrato.jpg" width="1080" height="730" alt="Thais e Christian, sócios da Salinas Contabilidade" fetchpriority="high" decoding="async">
+    </div>
+    <div class="hero__sombra" aria-hidden="true"></div>
+
+    <div class="hero__cima">
+      <p class="rotulo hero__rotulo" data-entra>CONTABILIDADE COM PROXIMIDADE</p>
+      <h1 class="hero__titulo" data-entra>
+        <span class="l"><span>Seu negócio</span></span>
+        <span class="l"><span>mais leve,</span></span>
+        <span class="l"><span class="apagado">mais longe.</span></span>
+      </h1>
+    </div>
+
+    <div class="hero__lado">
+      <div class="hero__falas" data-entra>
+<p class="hero__fala ativa"><span class="hero__simbolo" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M9 39V18l15-9 15 9v21M17 39V25h14v14M7 39h34"/><path d="M19 19h.1m9 0h.1"/></svg></span><span>Da abertura ao encerramento, apoio contábil para cada etapa da sua empresa.</span></p>
+<p class="hero__fala"><span class="hero__simbolo" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="14" r="6"/><path d="M12 38c0-8 5-13 12-13s12 5 12 13M31 14h10m-5-5v10"/></svg></span><span>Abertura, acompanhamento, desenquadramento e fechamento de MEI.</span></p>
+<p class="hero__fala"><span class="hero__simbolo" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="9" y="13" width="30" height="26" rx="3"/><path d="M17 13V9h14v4M9 23h30M21 22v4h6v-4"/></svg></span><span>Contabilidade e assessoria mensal para a rotina da sua empresa.</span></p>
+<p class="hero__fala"><span class="hero__simbolo" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="14" r="6"/><path d="M11 39c0-8 5-14 13-14s13 6 13 14M8 39h32"/></svg></span><span>Orientação contábil para profissionais autônomos e prestadores de serviços.</span></p>
+<p class="hero__fala"><span class="hero__simbolo" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M13 7h16l7 7v27H13zM29 7v8h7M18 22h13M18 28h13M18 34h8"/></svg></span><span>Apoio para a declaração de imposto de renda de pessoa física.</span></p>
+<p class="hero__fala"><span class="hero__simbolo" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M13 8h22v30H13zM18 15h12M18 21h12"/><circle cx="24" cy="30" r="5"/><path d="m21 35-1 7 4-2 4 2-1-7"/></svg></span><span>Emissão de certificado digital para suas necessidades.</span></p>
+</div>
+      <div class="passos hero__passos" data-entra>
+        <button class="hero__vira hero__vira--volta" type="button" data-volta aria-label="Área anterior"><svg class="ic" aria-hidden="true"><use href="#i-vira"/></svg></button>
+        <span class="passos__n" data-atual>01</span>
+        <span class="passos__linha"><i></i></span>
+        <span class="passos__t" data-total>06</span>
+        <button class="hero__vira" type="button" data-avanca aria-label="Próxima área"><svg class="ic" aria-hidden="true"><use href="#i-vira"/></svg></button>
+      </div>
+    </div>
+
+    <ul class="hero__areas" aria-label="Áreas de atuação"><li data-entra><button class="chip ativo" type="button" data-socio="equipe" aria-pressed="true">Empresa</button></li><li data-entra><button class="chip" type="button" data-socio="equipe" aria-pressed="false">MEI</button></li><li data-entra><button class="chip" type="button" data-socio="equipe" aria-pressed="false">Assessoria PJ</button></li><li data-entra><button class="chip" type="button" data-socio="equipe" aria-pressed="false">Autônomos</button></li><li data-entra><button class="chip" type="button" data-socio="equipe" aria-pressed="false">Imposto de renda</button></li><li data-entra><button class="chip" type="button" data-socio="equipe" aria-pressed="false">Certificado</button></li></ul>
+
+    <aside class="hero__socio vidro vidro--escuro" data-entra aria-label="Equipe Salinas"><div class="hero__pessoa ativa" data-socio="equipe"><img src="./img/salinas-logo.webp" alt="" width="320" height="320"><div class="hero__ficha"><p class="hero__nome">Thais e Christian</p><p class="rotulo hero__cargo">Sócios · Salinas</p><span class="hero__tempo" aria-hidden="true"><i></i></span><p class="hero__nota">Contabilidade para sua jornada</p></div></div></aside>
+    <div class="hero__veu" aria-hidden="true"></div>
+  </div>
+</section>
+
+
+    <section class="sobre-historia s-papel" id="sobre" data-elo="#sobre">
+  <div class="sobre-cena" data-historia><div class="sobre-palco">
+    <div class="sobre-retrato"><img src="./img/salinas-sobre.webp" alt="Thais, contadora e sócia da Salinas Contabilidade" loading="lazy" decoding="async"></div>
+    <p class="sobre-abertura">Por trás de cada negócio,<br><span>existem pessoas.</span></p>
+    <div class="sobre-narrativa">
+      <p class="sobre-marca">SALINAS <span> / </span> NOSSA HISTÓRIA</p>
+      <h2>Gente que cuida <em>de gente.</em></h2>
+      <p>Por trás de cada empresa existem pessoas, planos e decisões. Na Salinas, Thais acompanha essa jornada com uma contabilidade próxima, da abertura ao dia a dia do negócio.</p>
+      <p class="sobre-assinatura">Thais <span>· Contadora e sócia da Salinas</span></p>
+      <a class="sobre-link" href="#equipe">Conheça nossa equipe <span aria-hidden="true">&#8594;</span></a>
+    </div>
+  </div></div>
+</section>
+
+    <section class="secao areas s-noite" id="areas" data-elo="#areas"><div class="agua areas__agua" data-desliza="40"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="1"/><text x="50" y="61" text-anchor="middle" fill="currentColor" font-family="Georgia" font-size="30">S</text></svg></div><div class="caixa"><div class="areas__topo"><header class="cabeca"><p class="rotulo" data-revela="sobe">O que fazemos</p><h2 class="titulo" data-revela="linhas"><span class="l"><span>Soluções para</span></span><span class="l"><span class="apagado">cada etapa.</span></span></h2></header><div class="areas__lado" data-revela="sobe"><p class="texto">Da primeira iniciativa às obrigações do dia a dia, conte com uma equipe que entende sua jornada.</p></div></div><ul class="areas__lista" data-revela="grupo"><li class="area" data-seta><div class="area__corpo"><svg class="ic area__ic" aria-hidden="true"><use href="#i-doc"/></svg><h3 class="area__nome"><button class="area__abre" type="button" data-abre="painel" data-painel="area-empresa" aria-haspopup="dialog">Abertura e fechamento de empresas</button></h3><p class="area__txt">Acompanhamento para abertura e encerramento de empresas.</p><span class="seta area__seta" aria-hidden="true"><span class="seta__ic"><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg>
+</span></span></div></li><li class="area" data-seta><div class="area__corpo"><svg class="ic area__ic" aria-hidden="true"><use href="#i-doc"/></svg><h3 class="area__nome"><button class="area__abre" type="button" data-abre="painel" data-painel="area-certificado" aria-haspopup="dialog">Certificado digital</button></h3><p class="area__txt">Emissão de certificado digital.</p><span class="seta area__seta" aria-hidden="true"><span class="seta__ic"><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg>
+</span></span></div></li><li class="area" data-seta><div class="area__corpo"><svg class="ic area__ic" aria-hidden="true"><use href="#i-doc"/></svg><h3 class="area__nome"><button class="area__abre" type="button" data-abre="painel" data-painel="area-mei" aria-haspopup="dialog">Serviços para MEI</button></h3><p class="area__txt">Abertura, acompanhamento, desenquadramento e fechamento de MEI.</p><span class="seta area__seta" aria-hidden="true"><span class="seta__ic"><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg>
+</span></span></div></li><li class="area" data-seta><div class="area__corpo"><svg class="ic area__ic" aria-hidden="true"><use href="#i-doc"/></svg><h3 class="area__nome"><button class="area__abre" type="button" data-abre="painel" data-painel="area-autonomos" aria-haspopup="dialog">Contabilidade para autônomos</button></h3><p class="area__txt">Soluções contábeis para profissionais autônomos.</p><span class="seta area__seta" aria-hidden="true"><span class="seta__ic"><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg>
+</span></span></div></li><li class="area" data-seta><div class="area__corpo"><svg class="ic area__ic" aria-hidden="true"><use href="#i-doc"/></svg><h3 class="area__nome"><button class="area__abre" type="button" data-abre="painel" data-painel="area-pj" aria-haspopup="dialog">Assessoria mensal PJ</button></h3><p class="area__txt">Contabilidade com assessoria mensal para empresas.</p><span class="seta area__seta" aria-hidden="true"><span class="seta__ic"><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg>
+</span></span></div></li><li class="area" data-seta><div class="area__corpo"><svg class="ic area__ic" aria-hidden="true"><use href="#i-doc"/></svg><h3 class="area__nome"><button class="area__abre" type="button" data-abre="painel" data-painel="area-regularizacao" aria-haspopup="dialog">Regularização de débitos</button></h3><p class="area__txt">Parcelamento e regularização de débitos.</p><span class="seta area__seta" aria-hidden="true"><span class="seta__ic"><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg>
+</span></span></div></li><li class="area" data-seta><div class="area__corpo"><svg class="ic area__ic" aria-hidden="true"><use href="#i-doc"/></svg><h3 class="area__nome"><button class="area__abre" type="button" data-abre="painel" data-painel="area-ir" aria-haspopup="dialog">Imposto de renda PF</button></h3><p class="area__txt">Apoio para sua declaração de imposto de renda de pessoa física.</p><span class="seta area__seta" aria-hidden="true"><span class="seta__ic"><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg>
+</span></span></div></li></ul><div class="acoes areas__acoes" data-revela="sobe"><a class="botao botao--claro" href="#contato"><span class="botao__txt">Converse com nossa equipe</span><span class="botao__seta"><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg>
+</span></a></div></div></section>
+
+    <!-- Depoimentos: um trilho de cartões que rola de lado (src/motion/trilho.js). Quantos cartões quiser: os passos
+     (01 de 04) se acertam sozinhos. -->
+<section class="secao depo s-papel" id="depoimentos" data-elo="#sobre">
+  <div class="caixa depo__grade" data-trilho>
+
+    <div class="depo__texto" data-escada>
+      <header class="cabeca">
+        <p class="rotulo" data-revela="sobe">Depoimentos</p>
+        <h2 class="titulo" data-revela="linhas">
+          <span class="l"><span>Histórias</span></span>
+          <span class="l"><span>que seguem</span></span>
+          <span class="l"><span class="apagado">em frente.</span></span>
+        </h2>
+      </header>
+      <p class="texto" data-revela="sobe">Veja o que clientes compartilharam sobre o atendimento da Salinas.</p>
+    </div>
+
+    <div class="depo__faixa" data-faixa data-revela="grupo" tabindex="0" role="group" aria-label="Depoimentos de clientes: use as setas para passar">
+<figure class="depo__cartao"><svg class="ic ic--cheio depo__aspas" aria-hidden="true"><use href="#i-aspas"/></svg><blockquote><p>“Ótima experiência com os serviços. Atendimento totalmente objetivo e eficiente!”</p></blockquote><figcaption><strong>Rodrigo</strong><span>Empresa RMC Desenvolvimento de Software</span></figcaption></figure>
+<figure class="depo__cartao"><svg class="ic ic--cheio depo__aspas" aria-hidden="true"><use href="#i-aspas"/></svg><blockquote><p>“O trabalho da Salinas contabilidade foi essencial para organização financeira do meu consultório. Foi incrível todo suporte que a Thais deu, eu não troco por nada! Indico de olhos fechados.”</p></blockquote><figcaption><strong>Giovanna</strong><span>Marine Odontologia</span></figcaption></figure>
+<figure class="depo__cartao"><svg class="ic ic--cheio depo__aspas" aria-hidden="true"><use href="#i-aspas"/></svg><blockquote><p>“Salinas Contabilidade ajudou a organizar minha empresa, sempre com pontualidade e transparência para que pudesse crescer sem preocupações. Além de possuírem estratégias éticas para reduzir nossa carga tributária. Confio muito no trabalho deles!”</p></blockquote><figcaption><strong>Jônatas Bonventi</strong><span>Fatto Consulting</span></figcaption></figure>
+    </div>
+
+    <div class="depo__pe" data-revela="sobe">
+      <div class="depo__controles">
+        <button class="seta seta--grande seta--volta" type="button" data-ant aria-label="Depoimentos anteriores"><span class="seta__ic"><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg>
+</span></button>
+        <button class="seta seta--grande" type="button" data-prox aria-label="Próximos depoimentos"><span class="seta__ic"><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg>
+</span></button>
+        <div class="passos" aria-hidden="true">
+          <span class="passos__n" data-atual>01</span>
+          <span class="passos__linha"><i></i></span>
+          <span class="passos__t" data-total>04</span>
+        </div>
+      </div>
+      <a class="botao" href="#contato">
+        <span class="botao__txt">Fale com nossa equipe</span>
+        <span class="botao__seta"><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg>
+</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+    <!-- Equipe: a foto dos sócios em bandeira (presa ao canto de cima, sangrando até a borda direita), com um cartão de
+     vidro para cada sócio na borda de baixo dela; texto e números à esquerda. -->
+<section class="secao equipe s-papel" id="equipe" data-elo="#sobre">
+  <div class="agua equipe__agua" data-desliza="46"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="1"/><text x="50" y="61" text-anchor="middle" fill="currentColor" font-family="Georgia" font-size="30">S</text></svg></div>
+  <div class="caixa equipe__grade">
+    <div class="foto bandeira equipe__foto" data-revela="foto">
+      <img src="./img/salinas-retrato.jpg" alt="Thais e Christian, sócios da Salinas" loading="lazy" decoding="async">
+    </div>
+
+    <div class="equipe__texto" data-escada>
+      <header class="cabeca">
+        <p class="rotulo" data-revela="sobe">Nossa equipe</p>
+        <h2 class="titulo" data-revela="linhas">
+          <span class="l"><span>Pessoas por trás</span></span>
+          <span class="l"><span class="apagado">dos números.</span></span>
+        </h2>
+      </header>
+      <p class="texto" data-revela="sobe">Acreditamos em uma relação próxima para simplificar decisões e acompanhar cada fase da sua trajetória.</p>
+      <div class="acoes" data-revela="sobe">
+        <a class="botao" href="#contato">
+          <span class="botao__txt">Fale com nossa equipe</span>
+          <span class="botao__seta"><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg>
+</span>
+        </a>
+        <a class="elo" href="#areas">
+          <span class="elo__ic"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg></span>
+          <span class="elo__txt">Veja as áreas de atuação</span>
+        </a>
+      </div>
+    </div>
+
+    <ul class="equipe__socios" data-revela="grupo"><li class="vidro"><h3 class="rotulo">Thais</h3><p>Contadora e sócia</p></li><li class="vidro"><h3 class="rotulo">Christian</h3><p>Contador e sócio</p></li></ul>
+  </div>
+</section>
+
+
+    <section class="secao contato s-papel" id="contato" data-elo="#contato"><div class="agua contato__agua" data-desliza="46"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="1"/><text x="50" y="61" text-anchor="middle" fill="currentColor" font-family="Georgia" font-size="30">S</text></svg></div><div class="caixa"><header class="cabeca"><p class="rotulo" data-revela="sobe">Fale conosco</p><h2 class="titulo" data-revela="linhas"><span class="l"><span>Vamos conversar</span></span><span class="l"><span class="apagado">sobre seus planos?</span></span></h2></header><p class="texto" data-revela="sobe">Estamos à disposição para entender suas necessidades e apresentar nossas soluções.</p><p class="contato__assunto" data-assunto-aviso hidden><span>Assunto: <strong data-assunto-nome></strong></span> <button type="button" data-assunto-tira aria-label="Tirar assunto">×</button></p><ul class="contato__vias" data-revela="grupo"><li><a class="via via--cheia" href="https://wa.me/5511932873775" target="_blank" rel="noopener" data-via="whats"><h3 class="via__nome">WhatsApp</h3><p class="via__txt">(11) 93287-3775</p></a></li><li><a class="via" href="mailto:thais@salinascontabilidade.com.br" data-via="email"><h3 class="via__nome">E-mail</h3><p class="via__txt">thais@salinascontabilidade.com.br</p></a></li><li><a class="via" href="https://www.instagram.com/salinascontabilidade/" target="_blank" rel="noopener"><h3 class="via__nome">Instagram</h3><p class="via__txt">@salinascontabilidade</p></a></li></ul><p class="texto" data-revela="sobe">Av. Adolpho Massaglia · Vossoroca<br>Votorantim – SP · 18116-175</p></div></section>
+  </main>
+
+  <footer class="rodape s-noite" id="rodape"><div class="caixa"><p class="rotulo">SALINAS CONTABILIDADE</p><h2 class="titulo">Cuidar da sua jornada<br><span class="apagado">é o nosso trabalho.</span></h2><div class="acoes"><a class="botao botao--claro" href="#contato"><span class="botao__txt">Entre em contato</span></a></div><p class="texto">Votorantim · São Paulo</p><p class="rotulo">© Salinas Contabilidade</p></div></footer>
+  <!-- Menu: a folha que abre pelo botão redondo do topo, com todas as seções e os contatos. -->
+<dialog class="folha" id="menu" aria-label="Menu do site">
+  <div class="folha__fundo" data-fecha></div>
+  <div class="folha__painel menu s-noite" data-lenis-prevent>
+    <div class="menu__topo">
+      <span class="rotulo">Menu</span>
+      <button class="seta menu__fecha" type="button" data-fecha aria-label="Fechar o menu"><svg class="ic" aria-hidden="true"><use href="#i-fechar"/></svg></button>
+    </div>
+    <nav class="menu__nav" aria-label="Todas as seções">
+      <a href="#inicio"><span>Início</span></a>
+      <a href="#sobre"><span>Sobre nós</span></a>
+      <a href="#areas"><span>Soluções</span></a>
+      
+      <a href="#equipe"><span>Equipe</span></a>
+      
+      
+      <a href="#contato"><span>Contato</span></a>
+    </nav>
+    <div class="menu__pe">
+      <a class="botao botao--claro" href="#contato">
+        <span class="botao__txt">Fale com a equipe</span>
+        <span class="botao__seta"><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg>
+</span>
+      </a>
+      <ul>
+        <li><a class="rodape__elo" href="tel:+5511932873775">(11) 93287-3775</a></li>
+        <li><a class="rodape__elo" href="mailto:thais@salinascontabilidade.com.br?subject=Quero%20falar%20com%20a%20Salinas" data-via="email">thais@salinascontabilidade.com.br</a></li>
+      </ul>
+    </div>
+  </div>
+</dialog>
+
+  <dialog class="folha folha--leitura" id="painel" aria-label="Detalhes da solução"><div class="folha__fundo" data-fecha></div><div class="folha__painel painel s-papel" data-lenis-prevent><button class="seta painel__fecha" type="button" data-fecha aria-label="Fechar"><svg class="ic" aria-hidden="true"><use href="#i-fechar"/></svg></button><div class="painel__corpo" data-painel-corpo></div></div></dialog><template data-painel="area-empresa"><div class="painel__texto"><p class="rotulo">Soluções Salinas</p><h2 class="painel__titulo">Abertura e fechamento de empresas</h2><p class="texto">Acompanhamento para abertura e encerramento de empresas. Converse com a equipe para conhecer as opções adequadas ao seu caso.</p><div class="acoes"><a class="botao" href="#contato" data-assunto="Abertura e fechamento de empresas"><span class="botao__txt">Falar sobre esta solução</span><span class="botao__seta"><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg>
+</span></a></div></div></template><template data-painel="area-certificado"><div class="painel__texto"><p class="rotulo">Soluções Salinas</p><h2 class="painel__titulo">Certificado digital</h2><p class="texto">Emissão de certificado digital. Converse com a equipe para conhecer as opções adequadas ao seu caso.</p><div class="acoes"><a class="botao" href="#contato" data-assunto="Certificado digital"><span class="botao__txt">Falar sobre esta solução</span><span class="botao__seta"><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg>
+</span></a></div></div></template><template data-painel="area-mei"><div class="painel__texto"><p class="rotulo">Soluções Salinas</p><h2 class="painel__titulo">Serviços para MEI</h2><p class="texto">Abertura, acompanhamento, desenquadramento e fechamento de MEI. Converse com a equipe para conhecer as opções adequadas ao seu caso.</p><div class="acoes"><a class="botao" href="#contato" data-assunto="Serviços para MEI"><span class="botao__txt">Falar sobre esta solução</span><span class="botao__seta"><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg>
+</span></a></div></div></template><template data-painel="area-autonomos"><div class="painel__texto"><p class="rotulo">Soluções Salinas</p><h2 class="painel__titulo">Contabilidade para autônomos</h2><p class="texto">Soluções contábeis para profissionais autônomos. Converse com a equipe para conhecer as opções adequadas ao seu caso.</p><div class="acoes"><a class="botao" href="#contato" data-assunto="Contabilidade para autônomos"><span class="botao__txt">Falar sobre esta solução</span><span class="botao__seta"><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg>
+</span></a></div></div></template><template data-painel="area-pj"><div class="painel__texto"><p class="rotulo">Soluções Salinas</p><h2 class="painel__titulo">Assessoria mensal PJ</h2><p class="texto">Contabilidade com assessoria mensal para empresas. Converse com a equipe para conhecer as opções adequadas ao seu caso.</p><div class="acoes"><a class="botao" href="#contato" data-assunto="Assessoria mensal PJ"><span class="botao__txt">Falar sobre esta solução</span><span class="botao__seta"><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg>
+</span></a></div></div></template><template data-painel="area-regularizacao"><div class="painel__texto"><p class="rotulo">Soluções Salinas</p><h2 class="painel__titulo">Regularização de débitos</h2><p class="texto">Parcelamento e regularização de débitos. Converse com a equipe para conhecer as opções adequadas ao seu caso.</p><div class="acoes"><a class="botao" href="#contato" data-assunto="Regularização de débitos"><span class="botao__txt">Falar sobre esta solução</span><span class="botao__seta"><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg>
+</span></a></div></div></template><template data-painel="area-ir"><div class="painel__texto"><p class="rotulo">Soluções Salinas</p><h2 class="painel__titulo">Imposto de renda PF</h2><p class="texto">Apoio para sua declaração de imposto de renda de pessoa física. Converse com a equipe para conhecer as opções adequadas ao seu caso.</p><div class="acoes"><a class="botao" href="#contato" data-assunto="Imposto de renda PF"><span class="botao__txt">Falar sobre esta solução</span><span class="botao__seta"><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg>
+</span></a></div></div></template>
+
+</body>
+</html>
